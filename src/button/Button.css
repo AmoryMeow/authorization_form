@@ -1,0 +1,60 @@
+.button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 100%;
+  padding: 10px;
+  background-color: #227c9d;
+  border: none;
+  padding: 15px;
+  border-radius: 50px;
+  color: #f3efe0;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.button.default:hover {
+  background-color: #72cffa;
+  color: #227c9d;
+}
+
+.button.loading {
+  background-color: #72cffa;
+}
+
+.spinner,
+.checkmark {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+
+.spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top: 2px solid white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+.checkmark {
+  fill: white;
+}
+
+.button.success {
+  background-color: #28a745;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -23,7 +23,8 @@ yarn start
 
 |  username | password  |
 | ------------ | ------------ |
-|  admin | admin  |
+|  admin | admin  | 
+
 This setup provides a realistic simulation of a login process, including loading indicators and success/error feedback for the user.
 
 

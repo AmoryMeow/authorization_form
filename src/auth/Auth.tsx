@@ -50,6 +50,7 @@ export const Auth = () => {
         <h1 className="title">Autorization</h1>
         <form className="form" onSubmit={onSubmit} noValidate>
           <Input
+            type="text"
             label="Username"
             value={values?.username}
             onChange={(value) => {
@@ -59,6 +60,7 @@ export const Auth = () => {
             }}
           />
           <Input
+            type="password"
             label="Password"
             value={values?.password}
             onChange={(value) => {

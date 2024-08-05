@@ -1,7 +1,10 @@
 .input-box {
-  position : relative;
+  position: relative;
   width: 300px;
   margin: 20px 0;
+  display: flex;
+  align-items: center;
+  color: #7c7a6b;
 }
 
 .input {
@@ -12,20 +15,19 @@
   border: none;
   outline: none;
   border-bottom: 2px solid #999;
-  color: #7C7A6B;
+  color: #7c7a6b;
   font-size: 14px;
-  text-transform: uppercase;
   letter-spacing: 0.15em;
 }
 
-.input:focus, 
+.input:focus,
 .input:valid {
   border-bottom: 2px solid #72cffa;
 }
 
-.input:focus ~ .label, 
-.input:valid ~ .label{
-  color:  #aea5a5;
+.input:focus ~ .label,
+.input:valid ~ .label {
+  color: #aea5a5;
   letter-spacing: 0.15em;
   font-size: 12px;
   transform: translateY(-25px);
@@ -40,4 +42,11 @@
   font-size: 14px;
   text-transform: uppercase;
   transition: 0.2s ease-in-out;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 5px;
+  cursor: pointer;
+  align-self: center;
 }
